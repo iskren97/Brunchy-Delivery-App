@@ -1,11 +1,13 @@
 import React from 'react';
 import MainCSS from './Main.module.css';
 import Item from '../Item/Item';
-
 import data from '../../data/data.json';
 import Order from '../Order/Order';
+import { useBasket } from '../../context/basketContext';
 
 const Main = () => {
+  const { getBasketTotalAmount } = useBasket();
+
   return (
     <>
       <section className={MainCSS.introSection}>
@@ -34,7 +36,7 @@ const Main = () => {
       </section>
 
       <section className={MainCSS.orderSection}>
-        <Order />
+        <Order totalAmount={getBasketTotalAmount() || '0.00'} />
       </section>
     </>
   );
