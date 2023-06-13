@@ -1,0 +1,29 @@
+import React from 'react';
+import HeaderCSS from './Header.module.css';
+import deliveryImg from '../../images/image 1.png';
+
+const Header = () => {
+  return (
+    <>
+      <header className={HeaderCSS.header}>
+        <div className={HeaderCSS.container}>
+          <div>
+            <h1 className={HeaderCSS.heading}>Brunchy</h1>
+          </div>
+
+          <ul className={HeaderCSS.ul}>
+            <li className={HeaderCSS.li}>About</li>
+            <li className={HeaderCSS.li}>Call us</li>
+
+            <div className={HeaderCSS.deliveryContainer}>
+              <li className={HeaderCSS.delivery}>Free Delivery</li>
+              <img srcset={deliveryImg} alt="delivery" />
+            </div>
+          </ul>
+        </div>
+      </header>
+    </>
+  );
+};
+
+export default Header;
