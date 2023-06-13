@@ -13,7 +13,7 @@ const Item = ({ name, caption, price, image }) => {
         {price}
       </p>
 
-      <button style={{ border: 'none', background: 'white' }}>
+      <button className={ItemCSS.basketBtn}>
         <img srcSet={basket} alt="basket" />
       </button>
     </div>

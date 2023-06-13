@@ -48,3 +48,11 @@
 .dollarSign {
   color: #ff8515;
 }
+
+.basketBtn {
+  border: none;
+  background: white;
+  cursor: pointer;
+  borderradius: 10px;
+  padding: 8px;
+}
