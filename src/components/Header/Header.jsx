@@ -12,8 +12,22 @@ const Header = () => {
           </div>
 
           <ul className={HeaderCSS.ul}>
-            <li className={HeaderCSS.li}>About</li>
-            <li className={HeaderCSS.li}>Call us</li>
+            <a
+              href="https://www.dreamshot.bg/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <li className={HeaderCSS.li}>About</li>
+            </a>
+            <a
+              href="https://www.dreamshot.bg/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <li className={HeaderCSS.li}>Call Us</li>
+            </a>
 
             <div className={HeaderCSS.deliveryContainer}>
               <li className={HeaderCSS.delivery}>Free Delivery</li>
