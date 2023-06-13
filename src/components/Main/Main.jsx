@@ -3,10 +3,11 @@ import MainCSS from './Main.module.css';
 import Item from '../Item/Item';
 
 import data from '../../data/data.json';
+import Order from '../Order/Order';
 
 const Main = () => {
   return (
-    <>
+    <div>
       <section className={MainCSS.introSection}>
         <p className={MainCSS.introHeading}>
           The fastest brunch delivery in
@@ -31,7 +32,11 @@ const Main = () => {
           );
         })}
       </section>
-    </>
+
+      <section className={MainCSS.orderSection}>
+        <Order />
+      </section>
+    </div>
   );
 };
 

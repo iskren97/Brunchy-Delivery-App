@@ -46,3 +46,7 @@
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
+
+.orderSection {
+  text-align: -webkit-center;
+}
