@@ -1,0 +1,33 @@
+.intro {
+  position: absolute;
+  width: 480px;
+  height: 249px;
+  left: 140px;
+  top: 145px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 65px;
+
+  color: #363636;
+}
+
+.city {
+  color: #f17c0f;
+}
+
+.desc {
+  position: absolute;
+  width: 512px;
+  height: 45px;
+  left: 140px;
+  top: 431px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #000000;
+}
