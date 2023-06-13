@@ -1,0 +1,42 @@
+.orderContainer {
+  width: 476px;
+  height: 81px;
+  margin: 100px;
+  background: #f9f6f6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.orderPrice {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #363636;
+}
+
+.orderBtn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  width: 154px;
+  height: 54px;
+  background: #ff8515;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.basketBtn {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
