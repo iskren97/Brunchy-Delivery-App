@@ -7,7 +7,7 @@ import Order from '../Order/Order';
 
 const Main = () => {
   return (
-    <div>
+    <>
       <section className={MainCSS.introSection}>
         <p className={MainCSS.introHeading}>
           The fastest brunch delivery in
@@ -36,7 +36,7 @@ const Main = () => {
       <section className={MainCSS.orderSection}>
         <Order />
       </section>
-    </div>
+    </>
   );
 };
 

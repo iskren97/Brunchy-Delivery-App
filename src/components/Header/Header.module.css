@@ -12,9 +12,10 @@
 
 .container {
   display: flex;
-  justify-content: space-evenly;
-  padding: 10px 16px 10px 16px;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 15px 10px 15px;
+  margin: 50px;
 }
 
 .ul {
@@ -28,11 +29,7 @@
   font-size: 14px;
   list-style-type: none;
   color: #797979;
-}
-
-.heading {
-  font-weight: 700;
-  font-size: 36px;
+  cursor: pointer;
 }
 
 .deliveryContainer {
