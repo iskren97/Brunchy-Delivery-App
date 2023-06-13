@@ -31,7 +31,7 @@ const Header = () => {
 
             <div className={HeaderCSS.deliveryContainer}>
               <li className={HeaderCSS.delivery}>Free Delivery</li>
-              <img srcset={deliveryImg} alt="delivery" />
+              <img srcSet={deliveryImg} alt="delivery" />
             </div>
           </ul>
         </div>
