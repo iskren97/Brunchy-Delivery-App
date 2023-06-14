@@ -14,7 +14,7 @@ const OrderReview = () => {
         </p>
       </div>
 
-      <br />
+      <hr className={OrderReviewCSS.divider} />
 
       <div className={OrderReviewCSS.innerContainer}>
         <p>Total</p>

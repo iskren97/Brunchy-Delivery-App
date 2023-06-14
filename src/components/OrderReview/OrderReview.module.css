@@ -18,3 +18,8 @@
   line-height: 65px;
   color: #363636;
 }
+
+.divider {
+  border: 1px solid rgba(121, 121, 121, 0.4);
+  width: 383.21px;
+}
