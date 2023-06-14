@@ -5,6 +5,12 @@
   width: 476px;
   background: #f9f6f6;
   border-radius: 15px;
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    width: 100vw;
+    justify-items: center;
+    margin: 0 auto;
+  }
 }
 
 .innerContainer {
