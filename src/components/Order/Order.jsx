@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import basket from '../../images/basket.png';
 import OrderCSS from './Order.module.css';
+import OrderReview from '../OrderReview/OrderReview.jsx';
 
-const Order = ({ totalAmount }) => {
+const Order = ({ totalAmount, showReview, setShowReview }) => {
+  useEffect(() => {
+    if (showReview) {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
+  }, [showReview]);
+
   return (
-    <div className={OrderCSS.orderContainer}>
-      <button className={OrderCSS.basketBtn}>
-        <img srcSet={basket} alt="basket" />
-      </button>
+    <>
+      {showReview && <OrderReview setOpen={setShowReview} />}
 
-      <p className={OrderCSS.orderPrice}>{totalAmount}$</p>
+      <div className={OrderCSS.orderContainer}>
+        <button
+          className={OrderCSS.basketBtn}
+          onClick={() => {
+            setShowReview(true);
+          }}
+        >
+          <img srcSet={basket} alt="basket" />
+        </button>
 
-      <button className={OrderCSS.orderBtn}>Order Now</button>
-    </div>
+        <p className={OrderCSS.orderPrice}>{totalAmount}$</p>
+
+        <button className={OrderCSS.orderBtn}>Order Now</button>
+      </div>
+    </>
   );
 };
 
