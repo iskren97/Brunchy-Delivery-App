@@ -13,7 +13,7 @@ export const BasketProvider = ({ children }) => {
     setBasketAmount((currAmount) => (currAmount += Number(price)));
   };
 
-  const getBasketTotalAmount = () => basketAmount;
+  const getBasketTotalAmount = () => basketAmount.toFixed(2);
 
   return (
     <BasketContext.Provider

@@ -2,7 +2,7 @@ import React from 'react';
 import OrderReviewCSS from './OrderReview.module.css';
 import ItemCSS from '../Item/Item.module.css';
 
-const OrderReview = () => {
+const OrderReview = ({ totalAmount }) => {
   return (
     <div className={OrderReviewCSS.container}>
       <div className={OrderReviewCSS.innerContainer}>
@@ -21,7 +21,7 @@ const OrderReview = () => {
 
         <p>
           <span className={ItemCSS.dollarSign}>$ </span>
-          Price
+          {totalAmount}
         </p>
       </div>
     </div>

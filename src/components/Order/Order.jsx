@@ -15,7 +15,9 @@ const Order = ({ totalAmount, showReview, setShowReview }) => {
 
   return (
     <>
-      {showReview && <OrderReview setOpen={setShowReview} />}
+      {showReview && (
+        <OrderReview setOpen={setShowReview} totalAmount={totalAmount} />
+      )}
 
       <div className={OrderCSS.orderContainer}>
         <button
