@@ -4,49 +4,49 @@
       "id": 1,
       "name": "Butter Pancakes",
       "caption": "With Honey",
-      "price": "14.50",
+      "price": 14.5,
       "image": "1.png"
     },
     {
       "id": 2,
       "name": "Avocado Toast",
       "caption": "2 pieces",
-      "price": "16.50",
+      "price": 16.5,
       "image": "2.png"
     },
     {
       "id": 3,
       "name": "Sweet Yogurt",
       "caption": "With strawberries",
-      "price": "5.00",
+      "price": 5.0,
       "image": "3.png"
     },
     {
       "id": 4,
       "name": "Peanut Toast",
       "caption": "With peanut butter",
-      "price": "9.50",
+      "price": 9.5,
       "image": "4.png"
     },
     {
       "id": 5,
       "name": "French Toast",
       "caption": "With butter and jam",
-      "price": "9.50",
+      "price": 9.5,
       "image": "5.png"
     },
     {
       "id": 6,
       "name": "Banana Bread",
       "caption": "With blueberries",
-      "price": "5.50",
+      "price": 5.5,
       "image": "6.png"
     },
     {
       "id": 7,
       "name": "Classic Waffle",
       "caption": "With ice cream",
-      "price": "7.50",
+      "price": 7.5,
       "image": "7.png"
     }
   ]

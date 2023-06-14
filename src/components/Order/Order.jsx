@@ -29,9 +29,7 @@ const Order = ({ totalAmount, showReview, setShowReview }) => {
       <div className={OrderCSS.orderContainer}>
         <button
           className={OrderCSS.basketBtn}
-          onClick={() => {
-            setShowReview(true);
-          }}
+          onClick={() => setShowReview(true)}
         >
           <img srcSet={basket} alt="basket" />
         </button>
@@ -44,6 +42,7 @@ const Order = ({ totalAmount, showReview, setShowReview }) => {
             setShowModal(true);
           }}
           className={OrderCSS.orderBtn}
+          disabled={!Number(totalAmount)}
         >
           Order Now
         </button>

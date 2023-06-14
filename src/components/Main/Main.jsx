@@ -50,7 +50,7 @@ const Main = () => {
         <Order
           showReview={showReview}
           setShowReview={setShowReview}
-          totalAmount={getBasketTotalAmount() || '0.00'}
+          totalAmount={getBasketTotalAmount() || 0.0}
         />
       </section>
     </div>

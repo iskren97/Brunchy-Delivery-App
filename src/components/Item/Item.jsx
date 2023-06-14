@@ -13,7 +13,7 @@ const Item = ({ id, name, caption, price, image }) => {
       <p className={ItemCSS.itemCaption}>{caption}</p>
       <p className={ItemCSS.itemPrice}>
         <span className={ItemCSS.dollarSign}>$ </span>
-        {price}
+        {price.toFixed(2)}
       </p>
 
       <button
