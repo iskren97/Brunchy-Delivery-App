@@ -3,9 +3,11 @@ import basket from '../../images/basket.png';
 import OrderCSS from './Order.module.css';
 import OrderReview from '../OrderReview/OrderReview.jsx';
 import SuccessModal from '../SuccessModal/SuccessModal';
+import { useBasket } from '../../context/basketContext';
 
 const Order = ({ totalAmount, showReview, setShowReview }) => {
   const [showModal, setShowModal] = useState(false);
+  const { resetBasketState } = useBasket();
 
   useEffect(() => {
     if (showReview) {
@@ -38,6 +40,7 @@ const Order = ({ totalAmount, showReview, setShowReview }) => {
 
         <button
           onClick={() => {
+            resetBasketState();
             setShowModal(true);
           }}
           className={OrderCSS.orderBtn}
