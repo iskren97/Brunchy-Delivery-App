@@ -36,6 +36,7 @@ const Main = () => {
           return (
             <Item
               key={item.id}
+              id={item.id}
               name={item.name}
               caption={item.caption}
               price={item.price}
