@@ -35,6 +35,7 @@ const Main = () => {
         {data.items.map((item) => {
           return (
             <Item
+              key={item.id}
               name={item.name}
               caption={item.caption}
               price={item.price}
