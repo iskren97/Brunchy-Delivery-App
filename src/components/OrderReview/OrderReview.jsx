@@ -13,20 +13,24 @@ const OrderReview = ({ totalAmount }) => {
 
   return (
     <div className={OrderReviewCSS.container}>
-      {basketItems.map((basketItem) => {
-        return (
-          <div className={OrderReviewCSS.innerContainer}>
-            <p>
-              {basketItem.name} - {basketItem.quantity}
-            </p>
+      {basketItems.length !== 0 ? (
+        basketItems.map((basketItem) => {
+          return (
+            <div className={OrderReviewCSS.innerContainer}>
+              <p>
+                {basketItem.name} - {basketItem.quantity}
+              </p>
 
-            <p>
-              <span className={ItemCSS.dollarSign}>$ </span>
-              {(basketItem.price * basketItem.quantity).toFixed(2)}
-            </p>
-          </div>
-        );
-      })}
+              <p>
+                <span className={ItemCSS.dollarSign}>$ </span>
+                {(basketItem.price * basketItem.quantity).toFixed(2)}
+              </p>
+            </div>
+          );
+        })
+      ) : (
+        <h3>Your basket is currently empty</h3>
+      )}
 
       <hr className={OrderReviewCSS.divider} />
 
