@@ -9,7 +9,7 @@ const OrderReview = ({ totalAmount }) => {
 
   useEffect(() => {
     setBasketItems(getBasketItems());
-  }, []);
+  }, [getBasketItems]);
 
   return (
     <div className={OrderReviewCSS.container}>
