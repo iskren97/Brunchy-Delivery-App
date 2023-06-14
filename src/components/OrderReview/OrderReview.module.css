@@ -7,9 +7,13 @@
   border-radius: 15px;
 
   @media (min-width: 420px) and (max-width: 767px) {
-    width: 100vw;
-    justify-items: center;
+    width: 95vw;
     margin: 0 auto;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    width: 500px;
+    margin: 8px;
   }
 }
 
