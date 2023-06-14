@@ -3,8 +3,8 @@ import ItemCSS from './Item.module.css';
 import basket from '../../images/basket.png';
 import { useBasket } from '../../context/basketContext';
 
-const Item = ({ name, caption, price, image }) => {
-  const { increaseBasketAmount } = useBasket();
+const Item = ({ id, name, caption, price, image }) => {
+  const { increaseBasketAmount, increaseBasketQuantity } = useBasket();
 
   return (
     <div className={ItemCSS.itemContainer}>
@@ -13,12 +13,15 @@ const Item = ({ name, caption, price, image }) => {
       <p className={ItemCSS.itemCaption}>{caption}</p>
       <p className={ItemCSS.itemPrice}>
         <span className={ItemCSS.dollarSign}>$ </span>
-        {price}
+        {price.toFixed(2)}
       </p>
 
       <button
         className={ItemCSS.basketBtn}
-        onClick={() => increaseBasketAmount(price)}
+        onClick={() => {
+          increaseBasketQuantity(id);
+          increaseBasketAmount(price);
+        }}
       >
         <img srcSet={basket} alt="basket" />
       </button>

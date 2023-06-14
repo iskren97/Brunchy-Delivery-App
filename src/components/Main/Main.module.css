@@ -4,6 +4,20 @@
   gap: 35px;
   padding: 10px 15px 10px 15px;
   margin: 50px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    text-align: center;
+  }
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    text-align: -webkit-center;
+  }
 }
 
 .introHeading {
@@ -14,6 +28,18 @@
   width: 380px;
   margin: 0;
   color: #363636;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    align-self: center;
+  }
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    align-self: center;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    width: 400px;
+  }
 }
 
 .city {
@@ -27,6 +53,20 @@
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    align-self: center;
+  }
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    align-self: center;
+    width: 400px;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    width: 450px;
+    font-size: 20px;
+  }
 }
 
 .itemSection {
@@ -45,8 +85,36 @@
   margin: 50px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+
+  @media (min-width: 1281px) {
+    grid-auto-columns: 23%;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    grid-auto-columns: 30%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    grid-auto-columns: 45%;
+  }
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    grid-auto-columns: 68%;
+    width: 100%;
+    margin: 20px;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    grid-auto-columns: 70%;
+    width: 450px;
+    margin: 20px;
+  }
 }
 
 .orderSection {
   text-align: -webkit-center;
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    margin: 40px;
+  }
 }

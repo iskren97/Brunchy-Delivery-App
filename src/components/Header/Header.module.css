@@ -1,5 +1,4 @@
 .header {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
 }
@@ -8,6 +7,10 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 65px;
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    font-size: 30px;
+  }
 }
 
 .container {
@@ -16,6 +19,16 @@
   align-items: center;
   padding: 10px 15px 10px 15px;
   margin: 10px 50px 50px 50px;
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    padding: 0px;
+    margin: 10px;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    padding: 0px;
+    margin: 5px 5px 5px 30px;
+  }
 }
 
 .ul {

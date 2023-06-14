@@ -7,6 +7,16 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    width: 100%;
+    margin: inherit;
+  }
+
+  @media (min-width: 320px) and (max-width: 419px) {
+    width: 500px;
+    margin: 8px;
+  }
 }
 
 .orderPrice {
@@ -31,6 +41,14 @@
   border: none;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.orderBtn:disabled,
+.orderBtn[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
 }
 
 .basketBtn {
