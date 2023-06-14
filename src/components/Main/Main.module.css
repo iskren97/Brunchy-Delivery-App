@@ -1,0 +1,52 @@
+.introSection {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 10px 15px 10px 15px;
+  margin: 50px;
+}
+
+.introHeading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 65px;
+  width: 380px;
+  margin: 0;
+  color: #363636;
+}
+
+.city {
+  color: #f17c0f;
+}
+
+.desc {
+  width: 512px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.itemSection {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 15px 10px 15px;
+  margin: 50px;
+}
+
+.mediaScroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 19%;
+  padding: 10px 15px 10px 15px;
+  margin: 50px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.orderSection {
+  text-align: -webkit-center;
+}

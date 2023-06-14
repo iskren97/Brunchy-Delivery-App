@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 476px;
+  background: #f9f6f6;
+  border-radius: 15px;
+}
+
+.innerContainer {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 65px;
+  color: #363636;
+}
+
+.divider {
+  border: 1px solid rgba(121, 121, 121, 0.4);
+  width: 383.21px;
+}
