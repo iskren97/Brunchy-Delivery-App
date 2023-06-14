@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainCSS from './Main.module.css';
 import Item from '../Item/Item';
 import data from '../../data/data.json';
@@ -7,9 +7,18 @@ import { useBasket } from '../../context/basketContext';
 
 const Main = () => {
   const { getBasketTotalAmount } = useBasket();
+  const [showReview, setShowReview] = useState(false);
 
   return (
-    <>
+    <div
+      onClick={(e) => {
+        if (showReview) {
+          return !e.target.className.includes('OrderReview')
+            ? setShowReview(false)
+            : null;
+        }
+      }}
+    >
       <section className={MainCSS.introSection}>
         <p className={MainCSS.introHeading}>
           The fastest brunch delivery in
@@ -36,9 +45,13 @@ const Main = () => {
       </section>
 
       <section className={MainCSS.orderSection}>
-        <Order totalAmount={getBasketTotalAmount() || '0.00'} />
+        <Order
+          showReview={showReview}
+          setShowReview={setShowReview}
+          totalAmount={getBasketTotalAmount() || '0.00'}
+        />
       </section>
-    </>
+    </div>
   );
 };
 
