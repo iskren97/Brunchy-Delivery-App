@@ -16,7 +16,7 @@ const OrderReview = ({ totalAmount }) => {
       {basketItems.length !== 0 ? (
         basketItems.map((basketItem) => {
           return (
-            <div className={OrderReviewCSS.innerContainer}>
+            <div key={basketItem.id} className={OrderReviewCSS.innerContainer}>
               <p>
                 {basketItem.name} - {basketItem.quantity}
               </p>
